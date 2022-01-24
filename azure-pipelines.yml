@@ -26,10 +26,10 @@ extends:
     type: python
     to: pypi
     pythonCmds:
-    - cd lime-transport-websocket
     - python -m pip install --upgrade pip
     - python -m pip install pipenv
     - pip install setuptools wheel twine
     - pip freeze > requirements.txt
     - pip install -r requirements.txt
+    - cd lime-transport-websocket
     
