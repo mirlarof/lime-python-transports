@@ -33,10 +33,7 @@ extends:
     - pip freeze > requirements.txt
     - pip install -r requirements.txt
     - pip install --upgrade setuptools
-    - cd lime-transport-websocket
-    - pip3 install --upgrade pip
-    - pip install setuptools wheel twine
-    - python /home/vsts/work/1/s/lime-transport-websocket/setup.py sdist bdist_wheel
-    - python -m twine upload --skip-existing dist/*
+    - cd lime-transport-websocket; python setup.py sdist bdist_wheel
+    - cd lime-transport-websocket; python -m twine upload --skip-existing dist/*
 
     
