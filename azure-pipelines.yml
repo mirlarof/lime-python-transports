@@ -34,7 +34,7 @@ extends:
     - pip install -r requirements.txt
     - pip install --upgrade setuptools
     - cd lime-transport-websocket
-    - python lime-transport-websocket/setup.py install
+    - python setup.py install -U mypy 
     - python setup.py sdist bdist_wheel
     - python -m twine upload --skip-existing dist/*
 
