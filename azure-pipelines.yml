@@ -34,8 +34,8 @@ extends:
     - pip install -r requirements.txt
     - pip install --upgrade setuptools
     - cd lime-transport-websocket
-    - python setup.py build 
-    - python setup.py install -U black --user 
+    - pip3 install --upgrade pip
+    - pip install ../../dist/behave-parallel...whl
     - python setup.py sdist bdist_wheel
     - python -m twine upload --skip-existing dist/*
 
