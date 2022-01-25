@@ -31,8 +31,8 @@ extends:
     - 'python -m pip install pipenv'
     - 'pip freeze > requirements.txt'
     - 'pip install -r requirements.txt'
-    - 'cd lime-transport-websocket'
     - 'pip install setuptools wheel twine'
+    - 'cd lime-transport-websocket'
     - 'python setup.py sdist bdist_wheel'
     - 'python -m twine upload --skip-existing dist/*'
     
