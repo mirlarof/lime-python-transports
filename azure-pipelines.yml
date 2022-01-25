@@ -35,7 +35,7 @@ extends:
     - pip install --upgrade setuptools
     - cd lime-transport-websocket
     - pip3 install --upgrade pip
-    - pip install ../../dist/behave-parallel...whl
+    - pip install setuptools wheel twine
     - python setup.py sdist bdist_wheel
     - python -m twine upload --skip-existing dist/*
 
