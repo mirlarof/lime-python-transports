@@ -35,6 +35,6 @@ extends:
     - 'pip install --upgrade setuptools'
     - 'cd lime-transport-websocket'
     - 'pip install wheel'
-    - 'python setup.py bdist_wheel'
+    - 'python setup.py bdist_wheel --universal'
     - 'python -m twine upload --skip-existing dist/*'
     
