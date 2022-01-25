@@ -29,11 +29,10 @@ extends:
     - 'cd lime-transport-websocket'
     - 'python -m pip install --upgrade pip'
     - 'python -m pip install pipenv'
-    - 'pip install setuptools wheel twine'
     - 'pip freeze > requirements.txt'
     - 'pip install -r requirements.txt'
     - 'cd lime-transport-websocket'
-    - 'pip install wheel'
-    - 'python setup.py bdist_wheel '
+    - 'pip install setuptools wheel twine'
+    - 'python setup.py sdist bdist_wheel'
     - 'python -m twine upload --skip-existing dist/*'
     
